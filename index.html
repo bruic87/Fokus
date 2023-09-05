@@ -18,7 +18,7 @@
     <script src="./script.js" defer></script>
 </head>
 
-<body>
+<body id="teste">
     <main class="app">
         <header class="app__header">
             <figure class="app__logo-figure">
@@ -38,13 +38,13 @@
             <div class="app__card">
                 <ul class="app__card-list">
                     <li class="app__card-list-item">
-                        <button data-contexto="foco" class="app__card-button app__card-button--foco active">Foco</button>
+                        <button onclick="foco()" data-contexto="foco" id="btn-foco" class="app__card-button app__card-button--foco active">Foco</button>
                     </li>
                     <li class="app__card-list-item">
-                        <button data-contexto="short" class="app__card-button app__card-button--curto">Descanso curto</button>
+                        <button onclick="curto()" data-contexto="short" id="'btn-curto" class="app__card-button app__card-button--curto">Descanso curto</button>
                     </li>
                     <li class="app__card-list-item">
-                        <button data-contexto="long" class="app__card-button app__card-button--longo">Descanso longo</button>
+                        <button onclick="longo()" data-contexto="long" id="btn-longo" class="app__card-button app__card-button--longo">Descanso longo</button>
                     </li>
                 </ul>
                 <div id="timer" class="app__card-timer"></div>
